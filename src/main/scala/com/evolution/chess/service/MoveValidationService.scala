@@ -2,6 +2,7 @@ package com.evolution.chess.service
 
 import com.evolution.chess.domain.Color.White
 import com.evolution.chess.domain._
+import com.evolution.chess.domain.board._
 import eu.timepit.refined.auto._
 
 //TODO Rewrite to GetAllPossibleMoves
@@ -10,7 +11,7 @@ import eu.timepit.refined.auto._
 //TODO? How to track previous move for  en passant
 // check is piece on the board
 class MoveValidationService {
-  def validate(move: Move, board: Board): Boolean = {
+/*  def validate(move: Move, board: Board): Boolean = {
     if (isOccupiedBySameColor(move, board)) false
     else if (!isPathClear(board, move.from, move.to)) false
     else
@@ -24,9 +25,9 @@ class MoveValidationService {
         case Rook(color, hasMoved) => ???
         case Pawn(color) => ???
       }
-  }
+  }*/
 
-  private def isOccupiedBySameColor(move: Move, board: Board): Boolean = {
+ /* private def isOccupiedBySameColor(move: Move, board: Board): Boolean = {
     board.pieceAt(move.to.position) match {
       case Some(piece) if piece.color == move.player.color => true
       case _ => false
@@ -89,5 +90,5 @@ class MoveValidationService {
     val colDiff = math.abs(to.position.col - from.position.col)
     (rowDiff == 2 && colDiff == 1) || (rowDiff == 1 && colDiff == 2)
   }
-
+*/
 }

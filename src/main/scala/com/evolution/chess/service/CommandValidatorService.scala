@@ -3,6 +3,7 @@ package com.evolution.chess.service
 import cats.data.{NonEmptyChain, NonEmptyList, Validated}
 import com.evolution.chess.domain.GameStatus.InProgress
 import com.evolution.chess.engine._
+import com.evolution.chess.service.error._
 
 trait CommandValidatorService[F[_]] {
   def validate(cmd: Command, state: State): AllErrorsOr[NonEmptyList[Event]]

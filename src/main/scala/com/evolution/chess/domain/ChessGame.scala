@@ -1,5 +1,7 @@
 package com.evolution.chess.domain
 
+import com.evolution.chess.domain.board.Board
+
 import java.util.UUID
 
 case class GameId(value: UUID) extends AnyVal
