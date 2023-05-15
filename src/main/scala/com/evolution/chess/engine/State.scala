@@ -1,6 +1,6 @@
 package com.evolution.chess.engine
 
-import com.evolution.chess.domain.ChessGame
+import com.evolution.chess.domain.game.ChessGame
 
 //TODO? what to store here: Game, Board OR move game parameters to state and store state in Game
 case class State(game: ChessGame) {

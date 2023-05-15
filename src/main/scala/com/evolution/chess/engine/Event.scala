@@ -1,6 +1,8 @@
 package com.evolution.chess.engine
 
-import com.evolution.chess.domain.{GameId, Move, Piece, Player}
+import com.evolution.chess.domain.game.{GameId, Player}
+import com.evolution.chess.domain.move.Move
+import com.evolution.chess.domain.piece.Piece
 
 sealed trait Event
 

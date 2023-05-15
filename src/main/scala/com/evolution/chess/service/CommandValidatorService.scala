@@ -1,7 +1,7 @@
 package com.evolution.chess.service
 
 import cats.data.{NonEmptyChain, NonEmptyList, Validated}
-import com.evolution.chess.domain.GameStatus.InProgress
+import com.evolution.chess.domain.gameStatus.GameStatus.InProgress
 import com.evolution.chess.engine._
 import com.evolution.chess.service.error._
 
